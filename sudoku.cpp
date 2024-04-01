@@ -34,7 +34,6 @@ public:
     bool square_check(int starti, int startj, char value) {
         for (int i = starti; i < starti + 3; i ++) {
             for (int j = startj; j < startj + 3; j ++) {
-                // cout<<A[i][j]<<" - "<<value<<endl;
                 if (A[i][j] == value) {
                     return 0;
                 }
@@ -63,8 +62,6 @@ public:
                         possibility ++;
                         puti = i;
                         putj = j;
-                        // cout<<"posibilitate: "<<possibility<<" - "<<"value: "<<to_string(value)[0]<<endl;
-                        // cout<<"\t"<<"puti: "<<puti<<" - "<<"putj: "<<putj<<endl;
                     }
                     
                 }
@@ -113,7 +110,6 @@ int main() {
         {'.','.','.','4','1','9','.','.','5'},
         {'.','.','.','.','8','.','.','7','9'}
     };
-    // cout<< x<<endl<< endl;
     Solution s;
     s.solveSudoku(x);
     s.print();
